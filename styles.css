@@ -1,0 +1,629 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+body {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.selectLanguageBar {
+  background-color: rgb(76, 137, 48);
+  width: 100%;
+  height: 60px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: right;
+  color: white;
+  position: relative;
+}
+.selectLanguageBar div {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.selectLanguageBar div ul {
+  display: flex;
+  text-decoration: none;
+  list-style-type: none;
+}
+.selectLanguageBar div ul li {
+  margin: 0 10px;
+  cursor: pointer;
+}
+.selectLanguageBar select {
+  background-image: linear-gradient(45deg, transparent 50%, gray 50%),
+    linear-gradient(135deg, gray 50%, transparent 50%),
+    linear-gradient(to right, rgb(255, 255, 255), rgb(255, 255, 255));
+  background-position: calc(100% - 20px) calc(1em + 2px),
+    calc(100% - 15px) calc(1em + 2px), calc(100% - 2.5em) 0.5em;
+  background-size: 5px 5px, 5px 5px, 1px 1.5em;
+  background-repeat: no-repeat;
+  appearance: none;
+  height: 33px;
+  border: none;
+  padding: 0 17px;
+  width: 160px;
+  border-radius: 5px;
+  color: grey;
+  margin: 0 25px;
+}
+
+/* LOGO AND NAVBAR AND SEARCH*/
+.logoNavSearch {
+  display: flex;
+  margin: 0 auto;
+  width: 77%;
+  justify-content: space-between;
+  align-items: center;
+}
+.LogoNav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 27px 0;
+}
+.LogoNav ul {
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.LogoNav ul li {
+  margin: 0 5px;
+  cursor: pointer;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  color: rgb(153, 153, 153);
+}
+.logoNavSearch input {
+  width: 157px;
+  border-radius: 5px;
+  border: 1px solid rgb(153, 153, 153);
+  padding: 0 10px;
+  height: 33px;
+}
+.logoNavSearch button {
+  width: 75px;
+  height: 35px;
+  border: none;
+  background-color: rgb(75, 137, 47);
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* PARRALAX */
+
+.parallaxContainer {
+  /* The image used */
+  background-image: url("images/Background.png");
+  background-position-y: 25%;
+  min-height: 450px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+.parallaxOverlay {
+  width: 100%;
+  min-height: 418px;
+  background-color: rgba(0, 0, 0, 0.445);
+  opacity: 1;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+
+  text-align: center;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0px;
+}
+.parallaxOverlay h1 {
+  margin: 15px;
+  margin-top: -25px;
+  font-size: 56px;
+  font-weight: 100;
+}
+.parallaxOverlay button {
+  width: 142px;
+  height: 50px;
+  border: none;
+  background-color: rgb(75, 137, 47);
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  margin: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 400;
+}
+
+/* THE THREE COLUMNS*/
+.columnThree {
+  display: flex;
+  width: 1150px;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 0px;
+}
+.columnThree div {
+  width: 361px;
+  height: 222px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  background-position-y: 100%;
+  border-radius: 5px;
+}
+.column1 {
+  background-image: url("./images/sisallontuotantoa.png");
+}
+.column2 {
+  background-image: url("./images/markkinoinninautomaation-mvv.png");
+}
+.column3 {
+  background-image: url("./images/yini.png");
+}
+.overlayColumn {
+  background-color: rgba(0, 0, 0, 0.24);
+  opacity: 1;
+  width: 100%;
+  height: 222px;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Numebrs */
+.numbersClass {
+  display: flex;
+  width: 60%;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 0px;
+}
+
+.bars {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.textBar {
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  color: rgb(55, 58, 60);
+  display: flex;
+  flex-direction: column;
+}
+.textBar p {
+  margin: 0;
+  font-weight: 400;
+}
+.textBar p:nth-of-type(1) {
+  font-weight: 500;
+  font-family: "Open Sans", sans-serif;
+  font-size: 56px;
+}
+
+/* New section */
+.newsColumn {
+  background-color: rgb(235, 237, 239);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+.newsColumn h3 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 32px;
+  color: rgb(55, 58, 60);
+  text-align: center;
+}
+.newsWrapper {
+  display: flex;
+  margin: 0 auto;
+  width: 1150px;
+  justify-content: space-evenly;
+}
+.newstab {
+  width: 302px;
+  height: 132px;
+  padding: 25px;
+  background-color: white;
+  border-radius: 5px;
+}
+.newstab p {
+  margin: 0;
+}
+.datecls {
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  text-align: left;
+  color: rgb(55, 58, 60);
+}
+.textcls {
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  text-align: left;
+  color: rgb(55, 58, 60);
+  font-weight: 800;
+  cursor: pointer;
+}
+
+/* ref classes */
+.refrenceCls {
+  border-bottom: 1px solid rgb(224, 224, 224);
+  padding-bottom: 65px;
+}
+
+.refrenceCls h3 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 32px;
+  color: rgb(55, 58, 60);
+  text-align: center;
+}
+.refrenceCls h4 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 24px;
+  color: rgb(55, 58, 60);
+  text-align: center;
+  font-weight: 1000;
+}
+.refrenceCls p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  color: rgb(55, 58, 60);
+  margin: 0 auto;
+  font-weight: 500;
+  width: 80%;
+  text-align: center;
+}
+.refWrapper {
+  display: flex;
+  margin: 0 auto;
+  width: 1150px;
+  justify-content: space-evenly;
+}
+
+.imgwrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid rgb(224, 224, 224);
+  height: 180px;
+}
+.card {
+  width: 260px;
+  height: 375px;
+  padding-bottom: 25px;
+  border-radius: 5px;
+  border: 1px solid rgb(224, 224, 224);
+}
+.reftextBar {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+
+  text-align: center;
+}
+
+/* Subscribtions */
+.subscls {
+  display: flex;
+  flex-direction: column;
+}
+.subscls h3 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 32px;
+  color: rgb(55, 58, 60);
+  font-weight: 800;
+  text-align: center;
+}
+.subscls p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  color: rgb(55, 58, 60);
+  font-weight: 500;
+  width: 360px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.subinputclass {
+  margin: 25px auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  margin-bottom: 65px;
+}
+.subinputclass input {
+  width: 350px;
+  height: 35px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid rgb(203, 203, 203);
+}
+.subinputclass button {
+  cursor: pointer;
+  width: 127px;
+  height: 40px;
+  background-color: rgb(75, 137, 47);
+  border: none;
+  border-radius: 5px;
+  font-family: "Open Sans", sans-serif;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 20px;
+  color: white;
+  margin-left: 5px;
+}
+
+/*Footer */
+footer {
+  height: 265px;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+}
+.Contacts {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.contactbar h4 {
+  font-family: "Open Sans", sans-serif;
+  align-items: left;
+  font-size: 20px;
+}
+.contactbar h5 {
+  font-family: "Open Sans", sans-serif;
+  align-items: left;
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 0;
+}
+.contactbar p {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  align-items: left;
+  font-size: 16px;
+}
+.buttonbar {
+  display: flex;
+  margin: 5px 35px;
+  align-self: flex-end;
+}
+.buttonbar button {
+  cursor: pointer;
+  width: 111px;
+  height: 35px;
+  background-color: rgb(75, 137, 47);
+  border: none;
+  border-radius: 5px;
+  font-family: "Open Sans", sans-serif;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 16px;
+  color: white;
+  margin-bottom: 0;
+}
+
+.mapsite {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  flex-direction: column;
+  height: 70%;
+}
+.footerLinks {
+  display: flex;
+  flex-direction: row;
+}
+.footerLinks ul {
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
+.footerLinks ul li {
+  cursor: pointer;
+  margin: 0px 5px;
+}
+
+.footerSocial {
+  display: flex;
+  justify-content: flex-end;
+}
+.socialwrap {
+  cursor: pointer;
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  margin: 0px 5px;
+  background-color: rgb(75, 137, 47);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 1024px) {
+  body {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .parallaxContainer {
+    background-position-y: -300px;
+  }
+  .columnThree {
+    width: 80%;
+  }
+  .columnThree div {
+    width: 300px;
+    margin: 0 10px;
+  }
+  .overlayColumn {
+    width: 300px;
+    margin: 0px;
+  }
+  .numbersClass {
+    width: 100%;
+  }
+  .newsWrapper {
+    width: 80%;
+  }
+  .newstab {
+    padding-bottom: 35px;
+    margin: 0 10px;
+    width: 280px;
+  }
+  .refWrapper {
+    width: 60%;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .logoNavSearch {
+    flex-direction: column;
+  }
+  .selectLanguageBar select {
+    width: 150px;
+  }
+  .Search {
+    order: -1;
+    width: 100%;
+    flex-direction: row;
+    align-self: center;
+    justify-self: center;
+    margin: 10px auto;
+  }
+  .Search input {
+    width: 50%;
+  }
+  .menu {
+    display: block;
+    position: absolute;
+    top: 55px;
+    width: 90%;
+
+    color: white;
+    background-color: rgb(75, 137, 47);
+  }
+  .menu nav ul {
+    width: 80%;
+  }
+  .menu nav ul li {
+    color: white;
+  }
+  .parallaxOverlay h1 {
+    font-size: 25px;
+    font-weight: 700;
+  }
+  .parallaxContainer {
+    width: 100%;
+    overflow: hidden;
+    background-position-x: -300px;
+  }
+  .columnThree {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .columnThree div {
+    width: 280px;
+    margin: 10px auto;
+  }
+  .overlayColumn {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+  }
+  .numbersClass {
+    width: 100%;
+    flex-direction: column;
+  }
+  .bars {
+    margin: 10px auto;
+    width: 100%;
+    text-align: center;
+  }
+  .newsWrapper {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .newstab {
+    padding-bottom: 35px;
+    margin: 10px auto;
+    width: 280px;
+  }
+  .refWrapper {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .subinputclass {
+    flex-direction: column;
+  }
+
+  .card {
+    margin: 10px auto;
+  }
+  .subinputclass input {
+    width: 80%;
+  }
+  .subinputclass button {
+    margin: 15px 0px;
+  }
+  footer {
+    flex-direction: column;
+    height: 100%;
+  }
+  .Contacts {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .mapsite {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 25px;
+  }
+  .mapsite ul {
+    width: 100%;
+    margin: 5px auto;
+    font-size: 14px;
+    flex-direction: column;
+    padding: 0px;
+  }
+}

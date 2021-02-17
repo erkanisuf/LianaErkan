@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/moment"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <!-- Top Select Bar -->
+
+      <div class="selectLanguageBar">
+        <div>
+          <ul>
+            <li>News</li>
+            <li>Intranet</li>
+          </ul>
+          <select>
+            <option>In English</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Navigation and Searc -->
+      <div class="logoNavSearch">
+        <div class="LogoNav">
+          <div><img src="images/liana-logo.png" alt="logo" /></div>
+          <div class="menu">
+            <nav>
+              <ul>
+                <li>Company</li>
+                <li>Products</li>
+                <li>Contact Us</li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="Search">
+          <input type="text" placeholder="Search" /> <button>Search</button>
+        </div>
+      </div>
+    </header>
+    <!-- Parralax Main Image -->
+    <div class="parallaxContainer">
+      <div class="parallaxOverlay">
+        <h1>Software fueling digital marketing</h1>
+        <button>Learn more</button>
+      </div>
+    </div>
+
+    <!-- Company / Products/ Contact Us-->
+    <div class="columnThree">
+      <div class="column1"><div class="overlayColumn">Company</div></div>
+      <div class="column2"><div class="overlayColumn">Products</div></div>
+      <div class="column3"><div class="overlayColumn">Contact us</div></div>
+    </div>
+
+    <!-- Numbers-->
+    <div class="numbersClass">
+      <div class="bars">
+        <div><img src="./images/Business.png" alt="clients1" /></div>
+        <div class="textBar">
+          <p id="numberClients">3000</p>
+          <p>Clients</p>
+        </div>
+      </div>
+      <div class="bars">
+        <div><img src="./images/Face.png" alt="clients2" /></div>
+        <div class="textBar">
+          <p id="numberEmployees">180</p>
+          <p>Employees</p>
+        </div>
+      </div>
+      <div class="bars">
+        <div><img src="./images/Public.png" alt="clients3" /></div>
+        <div class="textBar">
+          <p id="numberUsers">10000</p>
+          <p>Daily users</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- News-->
+    <div class="newsColumn">
+      <div><h3>Latest news</h3></div>
+      <div id="thenewsID" class="newsWrapper"></div>
+    </div>
+
+    <!-- Refrences-->
+    <div class="refrenceCls">
+      <div><h3>References</h3></div>
+      <div class="refWrapper">
+        <div class="card">
+          <div class="imgwrap">
+            <img src="./images/Layer 1.png" alt="lay1" />
+          </div>
+          <div class="reftextBar">
+            <h4>Robert Bosch</h4>
+            <p>Bosch is a multinational engineering and electronics company.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="imgwrap">
+            <img src="./images/Layer 2.png" alt="lay2" />
+          </div>
+          <div class="reftextBar">
+            <h4>The Body Shop</h4>
+            <p>
+              The Body Shop is a global beauty brand and it has more than 3,000
+              stores in more than 60 countries.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="imgwrap">
+            <img src="./images/Layer 3.png" alt="lay3" />
+          </div>
+          <div class="reftextBar">
+            <h4>Lapland Hotels</h4>
+            <p>
+              Lapland Hotels is the largest and the most diverse hotel chain in
+              Lapland.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="imgwrap">
+            <img src="./images/Layer 4.png" alt="lay3" />
+          </div>
+          <div class="reftextBar">
+            <h4>Lapland Hotels</h4>
+            <p>IKEA is a multinational furniture store.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Subscribe-->
+    <div class="subscls">
+      <div><h3>Subscribe to our newsletter</h3></div>
+      <div>
+        <p>
+          Follow our story and get the latest promotonial news about our
+          products and events.
+        </p>
+      </div>
+      <div class="subinputclass">
+        <input id="email" type="text" placeholder="Your email address" />
+        <button onclick="notificationMe()">Subscribe</button>
+      </div>
+    </div>
+
+    <!-- Footer-->
+    <footer>
+      <div class="Contacts">
+        <div class="contactbar">
+          <h4>Liana Technologies</h4>
+          <h5>Sales and inquiries</h5>
+          <p>Email: sales@lianatech.com</p>
+          <p>Phone: +358 10 387 7053</p>
+        </div>
+        <div class="buttonbar"><button>Contact us</button></div>
+      </div>
+
+      <div class="mapsite">
+        <div class="footerLinks">
+          <ul>
+            <li>Company</li>
+            <li>Products</li>
+            <li>Contact us</li>
+            <li>News</li>
+            <li>Intranet</li>
+          </ul>
+        </div>
+
+        <div class="footerSocial">
+          <div class="socialwrap">
+            <img src="images/facebook.png" alt="fb" />
+          </div>
+
+          <div class="socialwrap">
+            <img src="images/twitter.png" alt="fb" />
+          </div>
+          <div class="socialwrap">
+            <img src="images/linkedin.png" alt="fb" />
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script type="text/javascript" src="news.js"></script>
+  </body>
+</html>
